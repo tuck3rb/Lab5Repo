@@ -3,7 +3,42 @@ guid: 36f11ef47b619884ab462e4a802170b6
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cigar_Mat
+    second: {fileID: 2100000, guid: 36c7ee74a65785a46aa2a5b9ddb0cd06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clothes_MAT
+    second: {fileID: 2100000, guid: cede031ff9107c049bdddaff896f9f3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes_MAT
+    second: {fileID: 2100000, guid: 7f60ac83d7e512b4e96dcd088e808451, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin_MAT
+    second: {fileID: 2100000, guid: c12e1696a8eddce45820e92ce567e617, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boss_diffuse
+    second: {fileID: 2800000, guid: 631b91c0e99e81f48a241904c0737e46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boss_normal
+    second: {fileID: 2800000, guid: cdd202733ebd21a44a291e28dfa46396, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Boss_specular
+    second: {fileID: 2800000, guid: bb3ea490ad6a4a94b8860a67764c0f61, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
