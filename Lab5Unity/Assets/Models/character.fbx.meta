@@ -3,7 +3,42 @@ guid: 2edb195f632230d4a8cfbf073f511de2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Character_Fat_Elvis_body_color1
+    second: {fileID: 2100000, guid: bc46b262911736141a2e16f2edaf41c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elvis_Brows_MAT1
+    second: {fileID: 2100000, guid: 832d704f7cccfad4f95be345a038289d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elvis_Eyes_MAT1
+    second: {fileID: 2100000, guid: c1376a22c77e1cd459e326ba72562dfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elvis_Mouth_MAT1
+    second: {fileID: 2100000, guid: 86e7394a8576fc3458214f8c5bb9acfe, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Elvis_FaceAnimMap
+    second: {fileID: 2800000, guid: 8f0050536aaa9a64ebe2553430ac1e18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FatElvis_diffuse
+    second: {fileID: 2800000, guid: a89f2ed9290480349bcecff6c4ec47fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FatElvis_normal
+    second: {fileID: 2800000, guid: 3ff73c96945c9c74ea1040957c61511c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
