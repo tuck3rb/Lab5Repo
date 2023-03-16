@@ -639,7 +639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9bb80931324284469eab3b5ec7db68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level 3
 --- !u!1 &388881450
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +728,7 @@ GameObject:
   - component: {fileID: 389476161}
   - component: {fileID: 389476160}
   - component: {fileID: 389476163}
+  - component: {fileID: 389476164}
   m_Layer: 5
   m_Name: LevelOneButton
   m_TagString: Untagged
@@ -801,9 +801,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 389476163}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: ToScene
+      - m_Target: {fileID: 389476164}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: SelectScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -863,7 +863,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9bb80931324284469eab3b5ec7db68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level 1
+--- !u!114 &389476164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389476158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868ff3d5815e5754790cd9af1ad06955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Scenes/Town
 --- !u!1 &446407245
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,8 +936,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
-  m_sharedMaterial: {fileID: 7993603411678731381, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1591,8 +1603,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
-  m_sharedMaterial: {fileID: 7993603411678731381, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1784,9 +1796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af945ad778288b4f8ece32552db3996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: {fileID: 0}
-  timer: {fileID: 0}
-  curtain: {fileID: 388881450}
 --- !u!1 &855879525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,8 +2587,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Cheese Chase
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
-  m_sharedMaterial: {fileID: 7993603411678731381, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3790,8 +3799,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Controls
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
-  m_sharedMaterial: {fileID: 7993603411678731381, guid: 807b3e4389c3a72469c07514139ba546, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3894,12 +3903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbd4768b2d9f0043bd040a121eaaccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
-  curtain: {fileID: 388881450}
-  canvas: {fileID: 840115715}
-  ScoreText: {fileID: 0}
-  TimerText: {fileID: 0}
 --- !u!4 &1951052626
 Transform:
   m_ObjectHideFlags: 0
@@ -4062,7 +4065,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9bb80931324284469eab3b5ec7db68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level 2
 --- !u!1 &2064961020
 GameObject:
   m_ObjectHideFlags: 0
