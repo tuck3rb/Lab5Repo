@@ -500,22 +500,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81fbdbff548c0134587b685ac426631c, type: 3}
   m_PrefabInstance: {fileID: 981860646}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1145873566
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145873564}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!95 &1145873567
 Animator:
   serializedVersion: 5
@@ -536,7 +520,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!136 &1145873568
+--- !u!114 &1145873568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145873564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bec31a5021010444ad8d0bafb052f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1145873564}
+  rigidbody: {fileID: 1145873570}
+  runSpeed: 0.002
+  boundaryPercent: 0.1
+  easing: 0.1
+--- !u!136 &1145873569
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -547,9 +548,41 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2.4903643
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: -1.2122459e-10, y: 0.74518365, z: -0.0000000015631749}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1145873570
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145873564}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1145873571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145873564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f4e4ed5e79b2847a3609292cae2e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1145873570}
+  horizontal: 0
+  vertical: 0
+  runSpeed: 0.2
 --- !u!1 &1872503242
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,8 +593,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1872503247}
   - component: {fileID: 1872503246}
-  - component: {fileID: 1872503245}
-  - component: {fileID: 1872503248}
   m_Layer: 0
   m_Name: Big Vegas
   m_TagString: Untagged
@@ -569,22 +600,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1872503245
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872503242}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!195 &1872503246
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -623,20 +638,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 106.197, z: 0}
---- !u!114 &1872503248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872503242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bec31a5021010444ad8d0bafb052f05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 1145873564}
-  runSpeed: 5
 --- !u!1001 &1887619324
 PrefabInstance:
   m_ObjectHideFlags: 0
