@@ -29,7 +29,7 @@ The mechanics are basic, use WASD or the Arrow Keys to move around and pan the c
 
 <ins>Struggles while writing this game:</ins>
 
-WE NEED TO FILL THIS OUT
+Without a doubt, the most difficult part of the game-making process in this lab was getting the camera and player movement to work seperately and then eventually together. When we imported the assets for the town and Big Vegas, it came with its own camera that had different properties than the usual Main Camera we use in Unity. We had to find a way to attach it to make the game third person and look correct in the process, and then we had to get the player movement to make sense for Big Vegas. For a while he was unable to walk correctly an wouldn't travel across the map. Once the player movement was fixed and the camera correctly attached, we had everything looking good.
 
 <ins>Joys while writing this game:</ins>
 
