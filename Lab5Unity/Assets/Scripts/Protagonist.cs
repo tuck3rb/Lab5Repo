@@ -12,6 +12,7 @@ public class Protagonist : MonoBehaviour
 
     private float moveLimiter = 0.7f;
 
+    private float c = 0;
     public float runSpeed = 5f;
 
     // Start is called before the first frame update
@@ -23,18 +24,24 @@ public class Protagonist : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-        if (vertical < 0) {
+        horizontal = (-1) * Input.GetAxisRaw("Horizontal");
+        vertical = (-1) * Input.GetAxisRaw("Vertical");
+        if ((vertical == 0) && (horizontal == 0)) {
+            c = 0;
+        }
+        if ((vertical != 0) && (c==0)){
             body.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
+            c++;
         }
 
-        if (horizontal < 0) {
+        if ((horizontal < 0) && (c==0)){
             body.transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);
+            c++;
         }
 
-        if (horizontal > 0) {
-            body.transform.Rotate(0.0f, 270.0f, 0.0f, Space.Self);
+        if ((horizontal > 0) && (c==0)){
+            body.transform.Rotate(0.0f, -90.0f, 0.0f, Space.Self);
+            c++;
         }
 
         transform.position = transform.position + new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
