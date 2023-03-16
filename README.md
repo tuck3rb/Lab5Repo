@@ -9,9 +9,9 @@ Collect CDs, burn them onto your own collection, and use the money earned from p
 
 <ins>Narrative Structure:</ins>
 
-Step into the platform shoes of Big Vegas, a washed up singer who trudges through the desolate, pitiful streets of a suburban cityscape, collecting and pirating CDs to barely make a living. As you wander through the dreary landscape, the only sounds you hear are the echoes of your footsteps and the melancholic tunes of pirated music.
+Step into the platform shoes of Big Vegas, a washed up singer who trudges through the desolate, pitiful streets of a suburban cityscape, collecting and pirating CDs in spite of the music streaming industry. As you wander through the dreary landscape, the only sounds you hear are the echoes of your footsteps and the melancholic tunes of pirated music.
 
-Each pirated CD earns you a meager sum, barely enough to keep your head above water in a surreal, pirated music purgatory. But the desire for a better life is too great to resist, and you continue to scour the city for more CDs, constantly avoiding the reign of Boss.
+Each pirated CD earns you a meager sum, barely enough to keep your head above water in a surreal, pirated music purgatory. But the desire for a better life is too great to resist, and you continue to scour the city for more CDs, constantly avoiding the reign of the Shopkeeper.
 
 As you progress through the game, the reality of your situation becomes clear. There is no escape from this life of piracy and desperation. Despite your best efforts, the city's corrupt system is rigged against you, Big Vegas will never return from exile.
 
@@ -48,4 +48,4 @@ A joy in creating the game was absolutely putting together all of the aesthetics
 
 <ins>Contributions:</ins>
 
-Tucker created the Github, Unity 3D core, Design Doc, and Teams chat. Then, Noah and Kaden imported the Big Vegas model and his city environment assets. Noah chose 10 royalty-free songs for the CDs. We used some scripts from Ethan's last game to create the movement for the player. Kaden created the animation and functionality of the CD and CD burning. Tucker updated the README.md, found the door asset, and created the controls page. Noah incorporated the assets for the inside of Big Vegas' home and binded dances to different buttons. Finally, Tucker created the menus/transitions and uploaded the game to Itch. ADD ETHAN CONTRIBUTIONS.
+Tucker created the Github, Unity 3D core, Design Doc, and Teams chat. Then, Noah and Kaden imported the Big Vegas model and his city environment assets. Noah chose 10 royalty-free songs for the CDs. We used some scripts from Ethan's last game to create the movement for the player. Kaden created the animation and functionality of the CD and CD burning. Tucker updated the README.md, found the door asset, and created the controls page. Noah incorporated the assets for the inside of Big Vegas' home and binded dances to different buttons. Ethan further improved the movement script. Finally, Tucker uploaded the game to Itch.
