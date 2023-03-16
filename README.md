@@ -28,9 +28,11 @@ The mechanics are basic, use WASD or the Arrow Keys to move around and pan the c
 - CDs glow to show they are selectable.
 
 <ins>Struggles while writing this game:</ins>
+
 WE NEED TO FILL THIS OUT
 
 <ins>Joys while writing this game:</ins>
+
 A joy in creating the game was absolutely putting together all of the aesthetics to make quite a hilarious game with a fun premise. The character Big Vegas and his sad reality was certainly a joy to run with and build upon.
 
 <ins>Credits:</ins>
@@ -42,5 +44,6 @@ A joy in creating the game was absolutely putting together all of the aesthetics
 - Pizzeria - https://www.turbosquid.com/3d-models/3d-pizzeria-1516180
 
 <ins>Contributions:</ins>
+
 Tucker created the Github, Unity 3D core, Design Doc, and Teams chat. Then, Noah and Kaden imported the Big Vegas model and his city environment assets. Noah chose 10 royalty-free songs for the CDs. We used some scripts from Ethan's last game to create the movement for the player. Kaden created the animation and functionality of the CD and CD burning. Tucker updated the README.md, found the door asset, and created the controls page. Noah incorporated the assets for the inside of Big Vegas' home and binded dances to different buttons. Finally, Tucker created the menus/transitions and uploaded the game to Itch. ADD ETHAN CONTRIBUTIONS.
 
