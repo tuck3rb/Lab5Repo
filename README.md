@@ -1,5 +1,7 @@
 # The Rascal KING
 -----------------
+<ins>Design doc:</ins>
+https://docs.google.com/document/d/1gNRg7o7U-QHZ9-VCjb9_zs7pamVRwxr2pFmowbwjnCQ/edit?usp=sharing
 
 <ins>The intent of your game:</ins>
 
