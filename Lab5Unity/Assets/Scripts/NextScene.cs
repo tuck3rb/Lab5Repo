@@ -13,8 +13,9 @@ public class NextScene : MonoBehaviour
     public void OnTriggerEnter(Collider collider) {
         print("Entered..");
         
-        if (collider.gameObject.CompareTag("MainCamera")) {
-            GameManager.Instance.ChangeScene(scene);
+        if (collider.gameObject.CompareTag("Player")) {
+            SceneManager.LoadScene(scene);
+            //GameManager.Instance.ChangeScene(scene);
         }
         
     }
