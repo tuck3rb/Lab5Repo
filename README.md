@@ -35,6 +35,7 @@ WE NEED TO FILL THIS OUT
 
 A joy in creating the game was absolutely putting together all of the aesthetics to make quite a hilarious game with a fun premise. The character Big Vegas and his sad reality was certainly a joy to run with and build upon.
 
+
 <ins>Credits:</ins>
 
 - Wonderful website for converting files - https://fabconvert.com/
@@ -42,8 +43,9 @@ A joy in creating the game was absolutely putting together all of the aesthetics
 - Computer - https://sketchfab.com/3d-models/old-computer-ac488d426f824858b3eb73a6ac15f9da#download
 - CD - https://sketchfab.com/3d-models/very-simple-cd-disc-9749f5ba1221476993376a3cb8fee1a5
 - Pizzeria - https://www.turbosquid.com/3d-models/3d-pizzeria-1516180
+- Door - https://sketchfab.com/3d-models/door-with-frame-2f2f149f3ec44d658a02c1f924dfa449
+- (this helped with volume slider) - https://youtu.be/yWCHaTwVblk
 
 <ins>Contributions:</ins>
 
 Tucker created the Github, Unity 3D core, Design Doc, and Teams chat. Then, Noah and Kaden imported the Big Vegas model and his city environment assets. Noah chose 10 royalty-free songs for the CDs. We used some scripts from Ethan's last game to create the movement for the player. Kaden created the animation and functionality of the CD and CD burning. Tucker updated the README.md, found the door asset, and created the controls page. Noah incorporated the assets for the inside of Big Vegas' home and binded dances to different buttons. Finally, Tucker created the menus/transitions and uploaded the game to Itch. ADD ETHAN CONTRIBUTIONS.
-
