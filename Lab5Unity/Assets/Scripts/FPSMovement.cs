@@ -29,6 +29,13 @@ public class FPSMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        if ((horizontal != 0f) | (vertical != 0f)) {
+            animator.SetFloat("speed", 1);
+        }
+
+        if ((horizontal == 0) & (vertical == 0)) {
+            animator.SetFloat("speed", 0);
+        }
 
         // when you want to dance
         if (Input.GetKeyDown(KeyCode.N) && grounded)

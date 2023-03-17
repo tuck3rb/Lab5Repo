@@ -26,22 +26,20 @@ public class Protagonist : MonoBehaviour
     {
         horizontal = (-1) * Input.GetAxisRaw("Horizontal");
         vertical = (-1) * Input.GetAxisRaw("Vertical");
-        if ((vertical == 0) && (horizontal == 0)) {
-            c = 0;
+        if ((vertical > 0)){
+            body.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        if ((vertical != 0) && (c==0)){
-            body.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
-            c++;
-        }
-
-        if ((horizontal < 0) && (c==0)){
-            body.transform.Rotate(0.0f, 90.0f, 0.0f, Space.Self);
-            c++;
+        
+        if ((vertical < 0)){
+            body.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
-        if ((horizontal > 0) && (c==0)){
-            body.transform.Rotate(0.0f, -90.0f, 0.0f, Space.Self);
-            c++;
+        if ((horizontal < 0)){
+            transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
+
+        if (horizontal > 0){
+            transform.rotation = Quaternion.Euler(0, 90, 0);
         }
 
         transform.position = transform.position + new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
