@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
-    public string scene;
-    public void ToScene(){
-        GameManager.Instance.ChangeScene(scene);
+    // for integers
+    public void ChangeScene(int i)
+    {
+        SceneManager.LoadScene(i);
     }
+    
     // Start is called before the first frame update
     void Start()
     {

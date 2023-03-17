@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -79,52 +78,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-    }
-
-    IEnumerator ColorLerpFunction(bool fadeout, float duration)
-    {
-        float time = 0;
-        raiseLower = true;
-        Image curtainImg = curtain.GetComponent<Image>();
-        Color startValue;
-        Color endValue;
-        if (fadeout)
-        {
-            startValue = new Color(0, 0, 0, 0);
-            endValue = new Color(0, 0, 0, 1);
-        }
-        else
-        {
-            startValue = new Color(0, 0, 0, 1);
-            endValue = new Color(0, 0, 0, 0);
-        }
-
-        while (time < duration)
-        {
-            curtainImg.color = Color.Lerp(startValue, endValue, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        curtainImg.color = endValue;
-        raiseLower = false;
-    }
-
-    IEnumerator LoadYourAsyncScene(string scene)
-    {
-        StartCoroutine(ColorLerpFunction(true, 1));
-
-        while (raiseLower) { yield return null; }
-
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
-
-        while (!asyncLoad.isDone) { yield return null; }
-
-        StartCoroutine(ColorLerpFunction(false, 1));
-    }
-
-    public void ChangeScene(string scene)
-    {
-        StartCoroutine(LoadYourAsyncScene(scene));
     }
 
     public void incScore()
