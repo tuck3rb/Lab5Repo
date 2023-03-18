@@ -42,6 +42,8 @@ public class Protagonist : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 90, 0);
         }
 
-        transform.position = transform.position + new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
+        if ((horizontal != 0) || (vertical != 0)) {
+            transform.position = transform.position + new Vector3(horizontal * runSpeed, 0, vertical * runSpeed);
+        }
     }
 }

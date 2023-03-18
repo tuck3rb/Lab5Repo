@@ -33,6 +33,10 @@ public class FPSMovement : MonoBehaviour
             animator.SetFloat("speed", 1);
         }
 
+        if ((horizontal != 0f) & (vertical != 0f)) {
+            runSpeed *= moveLimiter;
+        }
+
         if ((horizontal == 0) & (vertical == 0)) {
             animator.SetFloat("speed", 0);
         }
